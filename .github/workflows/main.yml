@@ -2,12 +2,22 @@ name: A workflow for the Hello World
 
 on: push
 
+
 jobs:
-  build: 
-    name: hello world action
-    run-on: unbuntu-latest
+
+  build:
+
+    name: Hello world action
+
+    runs-on: ubuntu-latest
+
     steps:
+
       - uses: actions/checkout@v1
+
       - uses: ./action-a
-        with: 
-          MY_NAME: "Mona Lisa"
+
+        with:
+
+          MY_NAME: "Mona"
+
