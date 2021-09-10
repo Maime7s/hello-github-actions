@@ -2,7 +2,7 @@ name: A workflow for the Hello World
 
 on: push
 
-job:
+jobs:
   build: 
     name: hello world action
     run-on: unbuntu-latest
